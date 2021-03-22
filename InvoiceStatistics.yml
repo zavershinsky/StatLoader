@@ -1,0 +1,22 @@
+"InvoiceStatistics":
+    "About":
+        "Version": "1.0.0.0"
+    "DataGenerator": !!python/object:MOD_db_manager.DatabaseManager
+        "database": "WMDB_BERCUT"
+        "password": "smaster"
+        "sql_metrics":
+        - !!python/object:MOD_sql_metrics.SQLMetric1 {}
+        "user": "smaster"
+    "DataProcessor": !!python/object:MOD_email_worker.EmailWorker
+        "exchange_server": "sync.bercut.com"
+        "password": "17MaxizavR0202"
+        "send_from": "maksim.zavershinskiy@bercut.com"
+        "send_to":
+        - "maksim.zavershinskiy@bercut.com"
+        "subject": "ВинМобайл Автостатистика"
+        "username": "BERCUT\\zavershinskiy-m"
+    "FirstRun": !!bool "true"
+    "Log": !!int "4"
+    "Schedule": "2021-03-24 16:15:27"
+    "ScheduleFormat": "%Y-%m-%d %H:%M:%S"
+    "Timeout": !!int "5000"
