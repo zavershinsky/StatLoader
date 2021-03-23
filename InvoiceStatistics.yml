@@ -8,13 +8,13 @@
         - !!python/object:MOD_sql_metrics.SQLMetric1 {}
         "user": "smaster"
     "DataProcessor": !!python/object:MOD_email_worker.EmailWorker
-        "exchange_server": "sync.bercut.com"
-        "password": "17MaxizavR0202"
-        "send_from": "maksim.zavershinskiy@bercut.com"
+        "exchange_server": "some.exchange.server"
+        "password": "p@ssw0rd"
+        "send_from": "account@exchange.server"
         "send_to":
-        - "maksim.zavershinskiy@bercut.com"
-        "subject": "ВинМобайл Автостатистика"
-        "username": "BERCUT\\zavershinskiy-m"
+        - "account@exchange.server"
+        "subject": "Автостатистика"
+        "username": "DOMAIN\\account"
     "FirstRun": !!bool "true"
     "Log": !!int "4"
     "Schedule": "2021-03-24 16:15:27"
