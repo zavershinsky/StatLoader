@@ -13,7 +13,7 @@
         "send_from": "account@exchange.server"
         "send_to":
         - "account@exchange.server"
-        "subject": "Автостатистика"
+        "subject": "AutoStats"
         "username": "DOMAIN\\account"
     "FirstRun": !!bool "true"
     "Log": !!int "4"
