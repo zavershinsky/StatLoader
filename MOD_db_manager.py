@@ -28,6 +28,10 @@ class DatabaseManager(DataManager):
     def __repr__(self):
         return self.__str__()
 
+    def __del__(self):
+        super(DatabaseManager, self).__del__()
+        del self.database, self.user, self.password, self.sql_metrics
+
     def get_result(self, stat_result: StatResult) -> int:
         ret = 0
         try:

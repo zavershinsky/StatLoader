@@ -36,6 +36,9 @@ class DataManager(YAMLObject):
     def __str__(self):
         return f'{self.__module__}.{self.__class__.__name__}'
 
+    def __del__(self):
+        del self._svc_manager, self._hidden
+
     def construct_query(self) -> str:
         raise NotImplementedError
 
