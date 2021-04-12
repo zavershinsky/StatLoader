@@ -22,6 +22,10 @@ class EmailWorker(DataManager):
     def __repr__(self):
         return self.__str__()
 
+    def __del__(self):
+        super(EmailWorker, self).__del__()
+        del self.username, self.password, self.exchange_server, self.send_from, self.send_to, self.subject
+
     def process(self, _data):
         ret = 1
         try:
